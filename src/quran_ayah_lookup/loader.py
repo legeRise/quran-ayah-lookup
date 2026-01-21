@@ -39,7 +39,7 @@ class QuranLoader:
         if not data_file.exists():
             raise FileNotFoundError(
                 f"Quran data file not found at {data_file}. "
-                "Please ensure quran-uthmani_all.txt is in the resources directory."
+                f"Please ensure {data_file.name} exists in the resources directory."
             )
         
         return data_file
